@@ -52,9 +52,9 @@ namespace CursetongueTranslator
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
             TextBoxRequest.Visibility = System.Windows.Visibility.Collapsed;
-
             ButtonToCursetongue.Visibility = System.Windows.Visibility.Collapsed;
             ButtonToEnglish.Visibility = System.Windows.Visibility.Collapsed;
+
             AboutPage.Visibility = System.Windows.Visibility.Collapsed;
 
             AllElementsLoaded = true;

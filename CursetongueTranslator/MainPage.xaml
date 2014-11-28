@@ -21,8 +21,10 @@
         <Button x:Name="ButtonToEnglish" Content="To English" Margin="0,59,10,0" Height="44" VerticalAlignment="Top" HorizontalAlignment="Right" Width="94" Click="ButtonToEnglish_Click"/>
         <RadioButton x:Name="RadioRandomWord" Content="Use Random Match" HorizontalAlignment="Left" Margin="89,108,0,0" VerticalAlignment="Top" GroupName="Random" IsChecked="True" Checked="RadioButtons_Changed" Unchecked="RadioButtons_Changed"/>
         <RadioButton x:Name="RadioFirstWord" Content="Use First Match" HorizontalAlignment="Left" Margin="221,108,0,0" VerticalAlignment="Top" GroupName="Random" Checked="RadioButtons_Changed" Unchecked="RadioButtons_Changed"/>
-
-        <Grid x:Name="AboutPage" Margin="0,0,10,31" Height="143" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="207" Visibility="Collapsed">
+        <Button Content="Randomize" HorizontalAlignment="Left" Margin="332,108,0,0" VerticalAlignment="Top" Width="94" Click="ButtonRandomize_Click"/>
+        <sdk:Label HorizontalAlignment="Left" Height="17" Margin="10,108,0,0" VerticalAlignment="Top" Width="74" Content="Word choice:"/>
+        <HyperlinkButton Content="GitHub" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" NavigateUri="https://github.com/JonKimbel/CursetongueTranslator" TargetName="_blank"/>
+        <Grid x:Name="AboutPage" Margin="0,0,10,31" Height="143" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="207" Visibility="Visible">
             <Grid.Effect>
                 <DropShadowEffect/>
             </Grid.Effect>
@@ -35,7 +37,5 @@
             <sdk:Label HorizontalAlignment="Left" Height="16" Margin="10,78,0,0" VerticalAlignment="Top" Width="187" Content="Thanks to the Wikia editors"/>
 
         </Grid>
-        <Button Content="Randomize" HorizontalAlignment="Left" Margin="332,108,0,0" VerticalAlignment="Top" Width="94" Click="ButtonRandomize_Click"/>
-        <sdk:Label HorizontalAlignment="Left" Height="17" Margin="10,108,0,0" VerticalAlignment="Top" Width="74" Content="Word choice:"/>
     </Grid>
 </UserControl>
